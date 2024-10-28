@@ -1,0 +1,119 @@
+arch:
+- bash-language-server
+- bat
+- bitwarden-cli
+- chezmoi
+- clang
+- cosign
+- cowsay
+- direnv
+- entr
+- eza
+- fd
+- ffmpeg
+- figlet
+- fortune-mod
+- fzf
+- git
+- git-delta
+- github-cli
+- glow
+- go-yq
+- jq
+- just
+- libnotify
+- lua-language-server
+- luacheck
+- ouch
+- pandoc
+- pyright
+- python-black
+- ripgrep
+- rubocop
+- shellcheck
+- shfmt
+- stylua
+- tailwindcss-language-server
+- taplo-cli
+- tealdeer
+- typescript-language-server
+- typos
+- vim
+- watchexec
+- yamlfmt
+- yamllint
+- yazi
+- zellij
+- zoxide
+- zsh
+- zsh-completions
+
+aur:
+- commitlint
+- dockerfile-language-server-bin
+- fastlane
+- fortune-mod-archlinux
+- fortune-mod-bofh-excuses
+- fortune-mod-montypython
+- libxml2
+- markdown-oxide-git
+- mise-bin
+- neovim-nightly-bin
+- prettierd
+- vim-language-server
+- vscode-langservers-extracted
+- whyq-bin
+
+# - rustup
+# - starship
+# - nushell
+# - fish
+
+host_exec:
+- flatpak
+- podman
+
+arch_distrobox:
+- adw-gtk-theme
+- bash-completion
+- bc
+- curl
+- diffutils
+- findutils
+- glibc
+- gnupg
+- inetutils
+- keyutils
+- less
+- lsof
+- man-db
+- man-pages
+- mesa
+- mlocate
+- mtr
+- ncurses
+- nss-mdns
+- opengl-driver
+- openssh
+- pigz
+- pinentry
+- procps-ng
+- rsync
+- shadow
+- sudo
+- tcpdump
+- time
+- traceroute
+- tree
+- tzdata
+- unzip
+- util-linux
+- util-linux-libs
+- vte-common
+- vte-common
+- vulkan-intel
+- vulkan-radeon
+- wget
+- words
+- xorg-xauth
+- zip
