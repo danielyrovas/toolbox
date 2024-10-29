@@ -1,7 +1,5 @@
 arch:
-- bash-language-server
 - bat
-- bitwarden-cli
 - chezmoi
 - clang
 - cosign
@@ -22,26 +20,14 @@ arch:
 - jq
 - just
 - libnotify
-- lua-language-server
-- luacheck
 - ouch
 - pandoc
-- pyright
-- python-black
 - ripgrep
-- rubocop
-- shellcheck
-- shfmt
-- stylua
-- tailwindcss-language-server
 - taplo-cli
 - tealdeer
-- typescript-language-server
 - typos
 - vim
 - watchexec
-- yamlfmt
-- yamllint
 - yazi
 - zellij
 - zoxide
@@ -49,19 +35,11 @@ arch:
 - zsh-completions
 
 aur:
-- commitlint
-- dockerfile-language-server-bin
-- fastlane
 - fortune-mod-archlinux
 - fortune-mod-bofh-excuses
 - fortune-mod-montypython
-- libxml2
-- markdown-oxide-git
 - mise-bin
 - neovim-nightly-bin
-- prettierd
-- vim-language-server
-- vscode-langservers-extracted
 - whyq-bin
 
 # - rustup
