@@ -24,6 +24,16 @@ RUN ln -s /run/host/run/systemd/system /run/systemd && \
     mkdir -p /run/dbus && \
     ln -s /run/host/run/dbus/system_bus_socket /run/dbus
 
+RUN pacman -S go-yq jq --noconfirm --needed
+
+RUN yq -r '.arch_distrobox.[]?' /tmp/pkgs.yml \
+    | xargs -r pacman -S --noconfirm --needed \
+    && rm -rf /var/cache/pacman/pkg/*
+
+RUN yq -r '.arch.[]?' /tmp/pkgs.yml \
+    | xargs -r pacman -S --noconfirm --needed \
+    && rm -rf /var/cache/pacman/pkg/*
+
 # Add paru and install AUR packages
 USER build
 WORKDIR /home/build
@@ -33,23 +43,13 @@ RUN git clone https://aur.archlinux.org/paru-bin.git --single-branch --depth 1 &
     cd .. && \
     rm -drf paru-bin
 
-RUN paru -S aur/whyq-bin extra/jq --noconfirm --needed
-
-RUN whyq -r '.aur.[]?' /tmp/pkgs.yml \
+RUN yq -r '.aur.[]?' /tmp/pkgs.yml \
     | xargs -r paru -S --noconfirm --needed
 
 USER root
 WORKDIR /
 
-RUN whyq -r '.arch_distrobox.[]?' /tmp/pkgs.yml \
-    | xargs -r pacman -S --noconfirm --needed \
-    && rm -rf /var/cache/pacman/pkg/*
-
-RUN whyq -r '.arch.[]?' /tmp/pkgs.yml \
-    | xargs -r pacman -S --noconfirm --needed \
-    && rm -rf /var/cache/pacman/pkg/*
-
-RUN for exe in $(whyq -r '.host_exec.[]?' /tmp/pkgs.yml); do \
+RUN for exe in $(yq -r '.host_exec.[]?' /tmp/pkgs.yml); do \
     ln -s /usr/bin/distrobox-host-exec /usr/local/bin/"$exe"; \
 done
 

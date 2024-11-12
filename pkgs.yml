@@ -25,7 +25,6 @@ arch:
 - ripgrep
 - taplo-cli
 - tealdeer
-- typos
 - vim
 - watchexec
 - yazi
@@ -33,6 +32,8 @@ arch:
 - zoxide
 - zsh
 - zsh-completions
+- wl-clipboard
+- tokei
 
 aur:
 - fortune-mod-archlinux
@@ -40,7 +41,6 @@ aur:
 - fortune-mod-montypython
 - mise-bin
 - neovim-nightly-bin
-- whyq-bin
 
 # - rustup
 # - starship
