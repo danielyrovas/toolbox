@@ -34,6 +34,8 @@ arch:
 - zsh-completions
 - wl-clipboard
 - tokei
+- expac
+- webkit2gtk-4.1 # tauri dependency
 
 aur:
 - fortune-mod-archlinux
@@ -41,7 +43,7 @@ aur:
 - fortune-mod-montypython
 - mise-bin
 - neovim-nightly-bin
-
+# - android-studio
 # - rustup
 # - starship
 # - nushell
