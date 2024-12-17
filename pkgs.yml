@@ -36,6 +36,7 @@ arch:
 - tokei
 - expac
 - webkit2gtk-4.1 # tauri dependency
+- nushell
 
 aur:
 - fortune-mod-archlinux
@@ -43,11 +44,6 @@ aur:
 - fortune-mod-montypython
 - mise-bin
 - neovim-nightly-bin
-# - android-studio
-# - rustup
-# - starship
-# - nushell
-# - fish
 
 host_exec:
 - flatpak
