@@ -37,6 +37,7 @@ arch:
 - expac
 - webkit2gtk-4.1 # tauri dependency
 - nushell
+- rainfrog
 
 aur:
 - fortune-mod-archlinux
@@ -48,6 +49,7 @@ aur:
 host_exec:
 - flatpak
 - podman
+- sshfs
 
 arch_distrobox:
 - adw-gtk-theme
