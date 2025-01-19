@@ -38,6 +38,7 @@ arch:
 - webkit2gtk-4.1 # tauri dependency
 - nushell
 - rainfrog
+- inotify-tools
 
 aur:
 - fortune-mod-archlinux
