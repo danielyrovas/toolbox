@@ -39,12 +39,12 @@ arch:
 - nushell
 - rainfrog
 - inotify-tools
+- mise
 
 aur:
 - fortune-mod-archlinux
 - fortune-mod-bofh-excuses
 - fortune-mod-montypython
-- mise-bin
 - neovim-nightly-bin
 
 host_exec:
