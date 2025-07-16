@@ -1,5 +1,6 @@
 arch:
 - bat
+- atuin
 - chezmoi
 - clang
 - cosign
@@ -45,11 +46,11 @@ aur:
 - fortune-mod-archlinux
 - fortune-mod-bofh-excuses
 - fortune-mod-montypython
-- neovim-nightly-bin
 
 host_exec:
 - flatpak
 - podman
+- btop
 - sshfs
 
 arch_distrobox:
